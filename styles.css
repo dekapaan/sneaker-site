@@ -151,3 +151,7 @@ p {
   flex-direction: column;
   justify-content: center;
 }
+.page-header-container {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
