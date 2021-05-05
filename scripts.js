@@ -15,9 +15,9 @@ AOS.init();
 $(document).ready(function () {
   //   Initialize product slider and set options
   $("#product-slider").owlCarousel({
-    items: 1,
+    items: 3,
     margin: 0,
-    stagePadding: 200,
+    stagePadding: 0,
     loop: true,
     dots: false,
     //   autoplay: true,

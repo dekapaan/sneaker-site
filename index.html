@@ -66,12 +66,12 @@
     <div id="fullpage">
       <div class="section">
         <!-- Add classes where necessary and style the section appropriately -->
-        <nav>
+        <div class="icons">
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-linkedin-in"></i>
           <i class="fab fa-instagram"></i>
-        </nav>
+        </div>
         <div id="homePage" class="content">
           <div class="home-details">
             <h1 class="home-heading">
@@ -89,47 +89,88 @@
       </div>
       <div class="section">
         <!-- Add classes where necessary and style the section appropriately -->
-        <nav>
+        <div class="icons">
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-linkedin-in"></i>
           <i class="fab fa-instagram"></i>
-        </nav>
+        </div>
         <div id="productPage" class="content">
           <header class="page-header-container">
-            <div>
-              <h2 class="page-heading">Premium</h2>
-              <h3 class="page-subtitle red-text">Shoe Collection</h3>
+            <div class="product-header">
+              <div>
+                <h2 class="page-heading product-heading">Premium</h2>
+                <h2 class="page-subtitle red-text product-heading">
+                  Shoe Collection
+                </h2>
+              </div>
+              <div class="counter">
+                <div>
+                  <h2 class="counter-number">456</h2>
+                  <p class="counter-text">Shoes Delivered</p>
+                </div>
+                <div>
+                  <h2 class="counter-number">560</h2>
+                  <p class="counter-text">New Article</p>
+                </div>
+                <div>
+                  <h2 class="counter-number">455</h2>
+                  <p class="counter-text">Happy Customers</p>
+                </div>
+              </div>
             </div>
             <div>
               <!-- Add HTML for the numbers here. They DO NOT have to animate -->
-            </div>
           </header>
           <!-- Product slider, please add your own classes as well to the HTML -->
           <div id="product-slider" class="owl-carousel">
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/product-img1.jpg" alt="Sneaker" />
+              <img
+                class="product-img"
+                src="./images/product-img1.jpg"
+                alt="Sneaker"
+              />
               <h3>Salomon Sneakers</h3>
-              <button onclick="openModal()">View Detail</button>
+              <button onclick="openModal()" class="prod-btn">
+                View Detail
+              </button>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/product-img2.jpg" alt="Sneaker" />
+              <img
+                class="product-img"
+                src="./images/product-img2.jpg"
+                alt="Sneaker"
+              />
               <h3>Nike Air Max</h3>
-              <button onclick="openModal()">View Detail</button>
+              <button onclick="openModal()" class="prod-btn">
+                View Detail
+              </button>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/product-img3.jpg" alt="Sneaker" />
+              <img
+                class="product-img"
+                src="./images/product-img3.jpg"
+                alt="Sneaker"
+              />
               <h3>Air Jordan</h3>
-              <button onclick="openModal()">View Detail</button>
+              <button onclick="openModal()" class="prod-btn">
+                View Detail
+              </button>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/product-img4.jpg" alt="Sneaker" />
+              <img
+                class="product-img"
+                src="./images/product-img4.jpg"
+                alt="Sneaker"
+              />
               <h3>Adidas Consortium</h3>
-              <button onclick="openModal()">View Detail</button>
+              <button onclick="openModal()" class="prod-btn">
+                View Detail
+              </button>
             </div>
           </div>
           <div id="modal">
@@ -147,8 +188,8 @@
         <div id="testimonialPage" class="content">
           <!-- Page header -->
           <header class="page-header-container">
-            <h2 class="page-heading">Best In Business</h2>
-            <h3 class="page-subtitle">Happy Customers</h3>
+            <h4 class="page-heading">Best In Business</h4>
+            <h2 class="page-subtitle red-text">Happy Customers</h2>
           </header>
           <div id="testimonial-slider" class="owl-carousel">
             <!-- The content for the testimonials has been created using JavaScript. 
@@ -210,7 +251,7 @@
         </div>
       </div>
     </div>
-
+    <i class="fas fa-quote-left"></i>
     <!-- External Scripts -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"

@@ -86,11 +86,11 @@ img {
 }
 
 /* PLEASE START YOUR STYLES UNDERNEATH THIS */
-nav {
-  display: flex;
-  position: fixed;
+.icons {
+  position: absolute;
   top: 30px;
-  right: 0;
+  right: 10px;
+  z-index: 1111;
 }
 i {
   height: 45px;
@@ -147,11 +147,69 @@ p {
   border: solid 2px #ed2d34;
 }
 #productPage {
+  background-image: url(/images/background-images/products_bg.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .page-header-container {
   font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+}
+.product-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+.counter {
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.counter div {
+  margin-right: 60px;
+}
+.counter-number {
   font-size: 40px;
+  margin-bottom: 10px;
+}
+.counter-text {
+  font-size: 16px;
+}
+.prod-btn {
+  border: solid 2px #464646;
+  border-radius: 40px;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #464646;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+}
+.prod-btn:hover {
+  background-color: #ed2d34;
+  color: white;
+  border: solid 2px #ed2d34;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-img {
+  max-width: 250px;
+}
+.product h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  margin: 20px 0;
+}
+#product-slider {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
