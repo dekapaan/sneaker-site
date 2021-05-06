@@ -46,9 +46,10 @@ fetch(randomUserURL)
     users.forEach((user) => {
       testimonialContainer.innerHTML += `
                 <div class="testimonial">
+                    <i class="fas fa-quote-left quote"></i>
                     <q class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
                     <img class="testimonial-img" src="${user.picture.large}" alt="${user.name.first} ${user.name.last}">
-                    <h4 class="testimonial-name">${user.name.first} ${user.name.last}</h4>
+                    <p class="testimonial-name">${user.name.first} ${user.name.last}</p>
                 </div>
             `;
     });
