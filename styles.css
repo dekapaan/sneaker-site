@@ -184,6 +184,7 @@ p {
 }
 .prod-btn {
   border: solid 2px #464646;
+  background-color: white;
   border-radius: 40px;
   padding: 10px 40px;
   text-decoration: none;
@@ -497,6 +498,19 @@ a.buy:hover {
   border: solid 1px #464646;
   padding: 10px 13px;
   border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+.arrows span:hover {
+  background-color: #ed2d34;
+  border: solid 1px #ed2d34;
+  color: white;
 }
 .close {
+  padding: 20px;
+  outline: none;
+  transition: 0.3s ease-in;
+}
+.close:hover {
+  color: #ed2d34;
+  cursor: pointer;
 }
